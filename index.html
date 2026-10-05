@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>HAPPY TEACHER'S DAY, SIR LEO!</title>
+<style>
+body {
+background-color: lightblue;
+color: navy;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: white;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid navy;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: navy;
+}
+button {
+background-color: navy;
+color: white;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+button:hover {
+background-color: darkblue;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: white;
+color: navy;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid navy;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color: navy;
+color: white;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Hello, welcome sir Leo!</h1>
+<p>October 5, 2026</p>
+<p>Click mo sir yung button sa baba</p>
+<button class="button" onclick="openLetter()">
+Open your surprise
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Happy Teacher's Day!</h1>
+<center>
+<img src="leo.jpg" height="200" width="200">
+</center>
+<p>To our adviser, tutor, and our second father,</p>
+<p>Happy teacher's day po sir Leo! us Darwinians are very fortunate and blessed to have a jolly, hardworking, intelligent, understanding, passionate, and positive class adviser like you.</p>
+<p>Whenever difficulties occur inside our classroom, you're always present to hear the origins of what caused the difficulties and provide your best to give genuine advices that I think can change even a pessimist's perspective in life. Your words are truly inspiring and motivational (hindi kita bino-bola sir ahh)</p>
+<p>Since grade 7 po sir, Darwin ang motivation 'ko kung bakit 'ko po ginalingan na ma-clutch ang grades last school year kasi sir nabalitaan 'ko na ikaw po pala yung magiging adviser namin sa grade 8 kapag napunta raw po kami sa Darwin tas sir bonus nalang din po yung nabalitaan 'ko na may aircon po yung room HAHAHA</p>
+<p>Sure po kami na naa-appreciate ka rin po ng iba niyo pang estudyante tulad po namin, kaya sir its an honor to be one of your students, we lab u sir!</p>
+<p>Happy Teacher's Day, Sir Leo!
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
